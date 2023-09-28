@@ -39,8 +39,7 @@ const Search = () => {
          <Input type='text' 
                 placeholder='Enter location' 
                 value={location} 
-                onChange={(event)=>{setLocation(event.target.value)}} 
-                
+                onChange={(event)=>{setLocation(event.target.value)}}                 
          />
          <Button onClick={FetchWeatherData}>Get Weather</Button>
          <Button onClick={handleClear} >Clear Data</Button> 
