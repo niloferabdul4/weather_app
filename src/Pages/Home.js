@@ -51,7 +51,7 @@ const Home = () => {
            {data.main?
             (<Wrapper>
                  <SubTitle>Feels Like</SubTitle>
-                 {data.main? (<Feels>{data.main.feels_like}</Feels>):null}
+                 {data.main? (<Feels>{data.main.feels_like}°</Feels>):null}
             </Wrapper>
             )
             :
@@ -59,7 +59,7 @@ const Home = () => {
             {data.main? 
             (<Wrapper>
                 <SubTitle>Humidity</SubTitle>
-                {data.main? (<Humidity>{data.main.humidity}</Humidity>):null}
+                {data.main? (<Humidity>{data.main.humidity}%</Humidity>):null}
             </Wrapper>
             )
             :
