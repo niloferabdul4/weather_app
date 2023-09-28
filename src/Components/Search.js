@@ -9,7 +9,7 @@ const Search = () => {
    const {location,setLocation,setData,data}=useContext(AppContext)
    const url=` https://api.openweathermap.org/data/2.5/weather?q=${location}&units=imperial&appid=6a6ada4069734965e8d7fcf74d2dd990`
    
-    const handleSubmit=()=>
+    const FetchWeatherData=()=>
     {
     
        axios.get(url).then((res)=>{ setData(res.data)
@@ -42,7 +42,7 @@ const Search = () => {
                 onChange={(event)=>{setLocation(event.target.value)}} 
                 
          />
-         <Button onClick={handleSubmit}>Get Weather</Button>
+         <Button onClick={FetchWeatherData}>Get Weather</Button>
          <Button onClick={handleClear} >Clear Data</Button> 
       </SearchBar>
       <ToastContainer/>
