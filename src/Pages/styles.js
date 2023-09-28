@@ -72,6 +72,7 @@ const Select=styled.select`
      outline: none;
      &:focus{
         border: none;
+        
      }
      ${mobile({
         fontSize:'0.95rem',marginTop:'1.5em'
